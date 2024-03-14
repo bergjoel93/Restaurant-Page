@@ -1,0 +1,250 @@
+@import url('https://fonts.googleapis.com/css2?family=Cookie&family=Dancing+Script:wght@400..700&family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&display=swap');
+
+:root{
+    --backgroundColor: #181D21;
+    --cheese: #D98E04;
+    --bun: #BF5B04;
+    --lettuce: #4F7302;
+    --patty: #593018;
+}
+
+*{
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+     font-family: "Roboto", sans-serif;
+}
+* button{
+    cursor: pointer;
+}
+
+header {
+    display: grid;
+    grid-template-columns: 1fr 4fr;
+    width: 100vw;
+    background-color: var(--bun);
+}
+header .logo {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 1rem;
+}
+header .logo span {
+    font-size: 4rem;
+}
+
+header nav {
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+}
+header nav button {
+    border: none;
+    font-size: 3rem;
+    background-color: transparent;
+    font-family: "Dancing Script", cursive;
+    font-weight: bolder;
+}
+
+header nav button:hover {
+    transform: rotate(15deg);
+}
+
+footer {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin: 1rem;
+    width: 100vw;
+}
+
+body {
+    background-color:var(--bun);
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    min-height: 100vh;
+}
+
+#content{
+    height: 100%;
+}
+
+/* Home */
+
+.main-img {
+    background-image: url('img/burger.jpg');
+    background-size: cover;
+    background-position: center;
+    width: 100%;
+    color: white;
+    display: flex;
+    flex-direction: column;
+    justify-content:center;
+    align-items: flex-start;
+}
+
+.main-text-box {
+    display: flex;
+    width: 40%;
+    flex-direction: column;
+    margin: 50px;
+}
+
+.main-text-box h1 {
+    font-family: "Dancing Script", cursive;
+}
+
+.main-text-box button {
+    font-size: 1.3rem;
+    background-color: var(--cheese) ;
+    width: 50%;
+    height: 40px;
+    border-radius: 20px;
+    border-style: none;
+    margin: 1rem;
+}
+
+.photo-cred-box {
+    justify-self: flex-end;
+    align-self: flex-end;
+    width: 100%;
+    padding-left: 25px;
+    font-weight: 100;
+}
+.photo-cred-box a {
+    text-decoration:  none;
+    color: white;
+}
+/* Menu */
+.menu-container {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+.menu-container h1 {
+    padding-top: 16px;
+    text-align: center;
+    font-size: 3rem;
+    
+}
+
+.button-filter {
+    display: flex;
+    width: 100%;
+    justify-content: space-around;
+    padding-bottom: 12px;
+}
+
+.button-filter button {
+    font-size: 1.2rem;
+    height: 30px;
+    border-style: none;
+    border-radius: 15px;
+    margin: 1rem;
+    min-width: 15%;
+    line-height: 15px;
+    background-color: var(--cheese);
+}
+
+/* Cards */
+
+.menu-cards-box {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(200px, 1fr)) ;
+    gap: 10px;
+    margin-bottom: 16px;
+    min-height: 100vh;
+}
+
+.card {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    
+    background-color: var(--backgroundColor);
+    min-height: 400px;
+}
+
+.card * {
+    color: white;
+}
+
+.card .card-title {
+    font-family:  "Dancing Script", cursive;
+    font-weight: bolder;
+    font-size: 2rem;
+    padding: 12px;
+}
+
+.card .card-img {
+    background-image: url('img/burger1.png');
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+    height: 50%;
+    width: 90%;
+}
+
+.card .card-info {
+    word-wrap: break-word;
+    padding: 1rem;
+}
+
+.card .order-now-button {
+    width: 100%;
+    display: flex;
+    justify-content: center;
+}
+.card .order-now-button button {
+    
+    font-size: 1.2rem;
+    height: 30px;
+    width: 50%;
+    border-style: none;
+    border-radius: 15px;
+    margin: 1rem;
+    min-width: 15%;
+    line-height: 15px;
+    background-color: #EBB200;
+    color: black;
+}
+
+/* About */
+.about-content {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    padding: 1rem;
+    background-color: var(--backgroundColor);
+    border-radius: 1rem;
+    margin: 1rem;
+}
+
+.about-image {
+    background-image: url('img/chef.jpg');
+    background-size: cover;
+    background-repeat: no-repeat;
+    width: 450px;
+    height: 600px;
+    border-radius: 1rem;
+    align-self: center;
+    justify-self: center;
+}
+.about-text {
+    font-size: 1.5rem;
+    color: white;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    padding: 1rem;
+}
+
+
+/* Contact */
+
